@@ -1,0 +1,424 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none !important;
+    list-style: none !important;
+    /* box-sizing: border-box !important; */
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+/* Global */
+ul , li , p , h1 , h2 , h3, h4 , a{
+    margin-bottom: 0 !important;
+}
+
+a:hover{
+    color: rgb(12, 101, 237);
+    transition: 0.2s;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.568);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bg-trans{
+    background-color: rgba(12, 102, 237, 0) !important;
+    border: 2px solid white;
+    border-radius: 5%;
+}
+
+/* .bg-lgrey{
+    background-color: lightgrey;
+} */
+
+.position-rel{
+    position: relative;
+}
+
+.position-abs{
+    position: absolute;
+}
+
+.padding-t-1{
+    padding-top: 1%;
+}
+
+/* ============================================================ */
+
+/* Header */
+header a{
+    color: white;
+}
+
+
+header a:hover{
+    cursor: pointer;
+    color: white;
+}
+
+/* ============================================================ */
+
+/* Navbar */
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 95%;
+    font-weight: 500;
+}
+
+.dropbtn {
+    text-decoration: none;
+    color: black;
+    font-size: 95%;
+    font-weight: 500;
+    border: none;
+    background-color: white;
+}
+
+.dropdown {
+    position: relative;
+    /* display: inline-block; */
+}
+
+.dropdown-content {
+    opacity: 0;
+    position: absolute;
+    min-width: 180px;
+    border-top: 2px solid rgb(12, 101, 237);
+    z-index: 100;
+}
+
+.dropdown-content a {
+    color: black;
+    border-bottom: 1px solid lightgrey;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    transition: 1s;
+}
+
+.dropdown-content a:first-child{
+    border-bottom: none;
+}
+
+
+.dropdown-content a:hover {
+    color: rgb(12, 101, 237);
+    transition: 0.2s;
+
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    transition: 0.5s;
+    left: -10%;
+    transform: translateX(4%);
+    top: 200%;
+}
+
+
+.dropdown:hover .dropbtn {
+    color: rgb(12, 101, 237);
+    
+}
+
+
+/* ============================================================ */
+
+/* slider with overlay top section1 */
+.top-img{
+    position: relative;
+}
+
+.top-img img{
+    width: 100%;
+    height: 700px;
+}
+
+.carousel-indicators {
+    right: 0;
+    bottom: 45%;
+    left: auto;
+    margin-right: 5%;
+    flex-direction: column;
+}
+
+
+.carousel-indicators [data-bs-target] {
+    height: 0.6rem;
+    width: 0.6rem;
+    background-color: white;
+
+}
+
+.carousel-indicators [data-bs-target].active{
+    background-color: black;
+}
+
+.carousel-indicators [data-bs-target]:hover {
+    height: 0.7rem;
+    width: 0.7rem;
+    background-color: black;
+    transition: 1s;
+}
+
+.carousel-caption{
+    bottom: 18rem;
+}
+
+.carousel-caption h1{
+    font-size: 4.5rem;
+    padding-bottom: 2%;
+}
+
+.carousel-caption p{
+    padding-bottom: 2%;
+}
+
+/* ============================================================ */
+
+/* About us Section */
+.about-container img{
+    z-index: 0;
+    width: 100%;
+    height: 550px;
+}
+
+
+.about-us hr{
+    color: rgb(12, 101, 237);
+    height: 4%;
+    opacity: 1;
+    margin: 2%;
+    border-top: rgb(12, 101, 237) 2px solid;
+}
+
+
+.about-box{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    z-index: 3;
+    left: 7%;
+    top: 3%;
+}
+
+.about-box h5:hover , i:hover{
+    color: rgb(12, 101, 237);
+}
+
+.about-box i{
+    font-size: 150%;
+    line-height: 3;
+}
+
+
+/* ============================================================ */
+
+/* Counter Section */
+.counter h6{
+    font-size: 150%;
+}
+
+.counter i{
+    color: rgb(12, 101, 237);
+    font-size: 200%;
+    background-color: white;
+    padding: 20%;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* ============================================================ */
+
+/* Cards Section */
+.card{
+    background-color: transparent;
+    width: 32%;
+    border: 1px solid white;
+}
+
+.card i{
+    box-sizing: border-box;
+    font-size: 300%;
+    padding: 10%;
+    color: white;
+}
+
+.card h1{
+    padding: 10%;
+    color: white;
+}
+
+
+/* hidden content */
+.card-body{
+    position: absolute;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 1%;
+    border: 1px solid white;
+}
+
+.card-body:hover{
+    opacity: 1;
+    z-index: 1;
+    bottom: -50%;
+    right: 0;
+    background-color: white;
+    transform: translateY(-50%);
+    transition: 0.3s;
+}
+
+/* Alternative method to hide the card + giving the parent over-flow=hidden and w-100, h-100 and bg-white */
+/* ********************* */
+/* .card-body{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: all 1s;
+}
+.card:hover .card-body{
+    top: 0;
+} */
+/* ********************* */
+
+.small-card{
+    border: 2px solid white;
+    background-color: transparent;
+}
+
+/* ============================================================ */
+
+/* Our Work Section */
+.work-cards img{
+    border-radius: 1%;
+}
+
+.work-cards img:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.work-cards-body{
+    top: 72%;
+    right: 7%;
+    width: 85%;
+    border-radius: 2%;
+    transform: scaleX(0);
+    transition: 0.3s;
+    background-color: rgba(12, 102, 237, 0.671);
+}
+
+.work-cards:hover .work-cards-body{
+    transform: scaleX(1);
+}
+
+
+/* ============================================================ */
+
+/* Our Creative Team Section */
+.creative-cards{
+    border: none;
+    position: relative;
+    /* flex-direction: column; */
+    word-wrap: break-word;
+    background-clip: border-box;
+}
+
+.creative-cards hr{
+    height: 0.2rem;
+    opacity: 1;
+}
+
+.creative-cards-body h5:hover{
+    color: rgb(12, 101, 237);
+    transition: 0.2s;
+}
+
+/* hidden area */
+.cc-dialog{
+    background-color: white;
+    top: 80%;
+    left: 0;
+    width: 100%;
+    transition:0.2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cc-dialog h6{
+    padding-bottom: 5%;
+    border-bottom: 2px solid black;
+}
+
+.creative-cards:hover .cc-dialog h6{
+    border-bottom: 2px solid white;
+    transition: 0.2s;
+}
+
+.creative-cards:hover .cc-dialog{
+    transition: 0.2s;
+    top: 43%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.creative-cards-hidden{
+    opacity: 0;
+}
+
+.creative-cards:hover .creative-cards-hidden{
+    opacity: 1;
+    z-index: 1;
+    bottom: -11%;
+    right: 0;
+    background-color: white;
+    transform: translateY(-10%);
+    transition: 1.5s;
+}
+
+
+.creative-cards-hidden ul{
+    background-color: rgb(12, 101, 237);
+    border-top-right-radius: 2%;
+    border-top-left-radius: 2%;
+}
+
+.creative-cards-hidden i:hover{
+    color: black !important;
+    transition: 0.2s;
+}
+
+
+/* ============================================================ */
+
+/* Our Prices Section */
+
+.nav{
+    border: 1px solid rgb(12, 101, 237);
+    border-top-right-radius: 50rem !important;
+    border-bottom-right-radius: 50rem !important;
+    border-bottom-left-radius: 50rem !important;
+    border-top-left-radius: 50rem !important;
+}
+
+
+.nav-item button{
+    padding: 1rem 5rem;
+}
+
+
+.first-b{
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+.second-b{
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
