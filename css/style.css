@@ -465,3 +465,66 @@ nav a{
     padding-bottom: 1rem;
     padding-left: 1rem;
 }
+
+
+/* ============================================================ */
+
+/* Latest Blog Section Section */
+.blog-card a{
+    color: black;
+}
+
+.blog-card a:hover{
+    color: rgb(12, 101, 237);
+    transition: 0.2s;
+}
+
+.blog-card:hover ul{
+    transition: 0.2s;
+    background-color: rgb(12, 101, 237) !important;
+}
+
+.blog-card li i:hover{
+    color: black !important;
+    transition: 0.2s;
+}
+
+.blog-card h6:hover{
+    color: black !important;
+}
+
+.try:hover .fa-long-arrow-alt-right{
+    transition: 0.2s;
+    transform: translateX(0.3rem);
+}
+
+.fa-long-arrow-alt-right{
+    transition: 0.2s;
+    font-size: 110%;
+}
+
+.progress{
+    width: 95%;
+}
+
+.progress-bar{
+    width: 25%;
+    transition: 0.5s;
+}
+
+.blog-card:hover .progress-bar{
+    opacity: 1;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.blog-card img{
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.blog-card:hover img{
+    overflow: hidden;
+    transition: 0.5s;
+    transform: scale(1.2) rotate(-2deg);
+}
