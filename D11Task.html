@@ -936,12 +936,12 @@
                 <hr class="w-50 me-auto">
             </div>
         </div>
-        <main class="owl-carousel owl-theme">
+        <main class="owl-carousel owl-theme try-nav">
             <div class="item">
                 <div class="card-alt mb-3" style="max-width: 540px;">
-                    <div class="row g-0">
+                    <div class="row g-0 align-items-center">
                         <div class="col-md-4">
-                            <img src="images/horse1.jpg" class="img-fluid rounded-start" alt="...">
+                            <img src="images/testi-avtar-1.jpg" class="img-fluid rounded-start" alt="...">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body-alt">
@@ -955,9 +955,9 @@
             </div>
             <div class="item">
                 <div class="card-alt mb-3" style="max-width: 540px;">
-                    <div class="row g-0">
+                    <div class="row g-0 align-items-center">
                         <div class="col-md-4">
-                            <img src="images/horse1.jpg" class="img-fluid rounded-start" alt="...">
+                            <img src="images/testi-avtar-3.jpg" class="img-fluid rounded-start" alt="...">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body-alt">
@@ -970,8 +970,24 @@
                 </div>
             </div>
             <div class="item">
-                <div class="card-alt mb-3" style="max-width: 540px;">
-                    <div class="row g-0">
+                <div class="card-alt mb-5" style="max-width: 540px;">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-4">
+                            <img src="images/testi-avtar-4.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body-alt">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card-alt mb-5" style="max-width: 540px;">
+                    <div class="row g-0 align-items-center">
                         <div class="col-md-4">
                             <img src="images/horse1.jpg" class="img-fluid rounded-start" alt="...">
                         </div>
@@ -1118,7 +1134,34 @@
             </main>
         </div>
     </section>
-<!-- Latest Blog Section Start -->
+<!-- Latest Blog Section End -->
+
+<!-- Meet Clients Section Start -->
+<section class="container">
+    <div class="container">
+        <div class="about-us d-flex justify-content-center mt-5 py-5">
+            <h1 class="w-auto">Meet Our Clients</h1>
+            <div class="col-2 padding-t-1">
+                <hr class="w-25 me-auto">
+                <hr class="w-50 me-auto">
+            </div>
+        </div>
+        <div class="client-test">
+            <img src="images/team5.png" alt="">
+        </div>
+        <div class="row justify-content-between align-items-center text-end">
+                <div class="col-4"><img src="images/partner-g1.png" alt="" ></div>
+                <div class="col-4"><img src="images/partner-g2.png" alt="" ></div>
+                <div class="col-4"><img src="images/partner-g4.png" alt="" ></div>
+                <div class="col-4"><img src="images/partner-g5.png" alt="" ></div>
+                <div class="col-4"><img src="images/partner-g3.png" alt="" ></div>
+                <div class="col-4"><img src="images/partner-g1.png" alt="" ></div>
+        </div>
+
+    </div>
+
+</section>
+<!-- Meet Clients Section Start -->
 
     <!-- Footer Start -->
     <footer>
@@ -1130,12 +1173,10 @@
     <script>
     $('.owl-carousel').owlCarousel({
         loop:true,
-        margin:10,
+        margin:1,
         nav:true,
         dots:false,
-        navElement:[
-            
-        ],
+        navText : ["<span class='testim-l'><i class='fas fa-long-arrow-alt-left'></i></span>","<span class='testim-r'><i class='fas fa-long-arrow-alt-right'></i></span>"],
         responsive:{
         0:{
             items:1

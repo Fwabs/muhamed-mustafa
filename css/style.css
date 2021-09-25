@@ -442,6 +442,7 @@ nav a{
 
 /* ============================================================ */
 
+/* testimonial */
 .card-alt{
     position: relative;
     display: flex;
@@ -453,7 +454,6 @@ nav a{
     border: 1px solid rgba(0,0,0,.125);
     border-radius: .25rem;
 }
-
 .card-body-alt{
     flex: 1 1 auto;
     flex-grow: 1;
@@ -466,6 +466,38 @@ nav a{
     padding-left: 1rem;
 }
 
+.owl-next:hover , .owl-prev:hover{
+    background-color: transparent !important;
+}
+
+.owl-nav .testim-r{
+    background-color: rgb(12, 101, 237);
+    color: white;
+    border-top-right-radius: 50rem !important;
+    border-bottom-right-radius: 50rem !important;
+    font-size: 110%;
+    padding: 5% 60%;
+    margin: 20%;
+}
+
+.owl-nav .testim-l{
+    background-color: rgb(12, 101, 237);
+    color: white;
+    border-bottom-left-radius: 50rem !important;
+    border-top-left-radius: 50rem !important;
+    font-size: 110%;
+    padding: 5% 60%;
+}
+
+.owl-nav .testim-r:hover, i:hover{
+    background-color: black !important;
+    color: white;
+}
+
+.owl-nav .testim-l:hover, i:hover{
+    background-color: black !important;
+    color: white;
+}
 
 /* ============================================================ */
 
@@ -527,4 +559,11 @@ nav a{
     overflow: hidden;
     transition: 0.5s;
     transform: scale(1.2) rotate(-2deg);
+}
+
+/* ============================================================ */
+
+/* Meet our Clients */
+.client-test img{
+    -webkit-filter:drop-shadow(-3px 4px 5px rgb(117, 116, 116));
 }
