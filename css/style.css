@@ -594,3 +594,10 @@ nav a{
 .client-watermark i{
     font-size: 500%;
 }
+
+/* ============================================================ */
+
+/* Footer */
+footer hr{
+    opacity: 1;
+}
