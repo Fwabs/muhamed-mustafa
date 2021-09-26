@@ -565,5 +565,32 @@ nav a{
 
 /* Meet our Clients */
 .client-test img{
-    -webkit-filter:drop-shadow(-3px 4px 5px rgb(117, 116, 116));
+    filter:drop-shadow(-3px 4px 5px rgb(117, 116, 116));
+}
+
+.client-cards{
+    border:  1px solid black !important;
+    border-radius: 4%;
+    padding-right:  0 !important;
+    padding-left: 0 !important;
+    padding: 2% 0;
+}
+
+.tes img{
+    height: 5rem;
+}
+
+.client-watermark{
+    left: 11%;
+    z-index: 0;
+    opacity: 0.3;
+    top: 16%;
+}
+
+.client-watermark i:hover{
+    background-color: transparent !important;
+}
+
+.client-watermark i{
+    font-size: 500%;
 }
