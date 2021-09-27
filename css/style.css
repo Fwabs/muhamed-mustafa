@@ -88,7 +88,6 @@ nav a{
 
 .dropdown {
     position: relative;
-    /* display: inline-block; */
 }
 
 .dropdown-content {
@@ -466,6 +465,13 @@ nav a{
     padding-left: 1rem;
 }
 
+.owl-nav{
+    margin: 0 auto;
+    width: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
 .owl-next:hover , .owl-prev:hover{
     background-color: transparent !important;
 }
@@ -600,4 +606,26 @@ nav a{
 /* Footer */
 footer hr{
     opacity: 1;
+}
+
+footer i:hover{
+    cursor: pointer;
+    background-color: transparent !important;
+}
+
+footer button{
+    transition: 0.3s;
+}
+
+.btn-fot:hover{
+    background: rgb(12, 101, 237) !important;
+    transition: 0.3s;
+}
+
+.btn-fot:hover a{
+    color: white !important;
+}
+
+.after-foot{
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
 }
