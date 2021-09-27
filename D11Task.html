@@ -17,7 +17,7 @@
     <header class="bg-primary text-white ">
         <main class="container">
             <div class="row justify-content-between p-3">
-                <ul class="d-flex col-6 justify-content-between">
+                <ul class="d-flex col-md-6 col-sm-12 justify-content-between">
                     <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
                     <li><a href=""><i class="fab fa-twitter"></i></a></li>
                     <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
@@ -27,13 +27,13 @@
                         <p><i class="fas fa-map-marker-alt pe-2"></i> 267 Park Avenue New York, NY 90210</p>
                     </li>
                 </ul>
-                <div class="col-3">
+                <div class="col-md-3 col-sm-12">
                     <div class="d-flex justify-content-end">
                         <i class="far fa-envelope pe-2 pt-1"></i>
                         <p class="border-end pe-4">Quick Email</p>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3 col-sm-12">
                     <div class="d-flex">
                         <i class="fas fa-phone-volume pe-2 pt-1"></i>
                         <p href="">+1 (409) 987–5874</p>
@@ -45,112 +45,82 @@
     <!-- Header End -->
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <img src="images/Trade-X-Logo.png" alt="">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid py-4">
+            <div class="container w-50">
+                <div class="d-flex">
+                    <img src="images/Trade-X-Logo.png" alt="">
+                </div>
+            </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link active dropdown-toggle " aria-current="page" href="#">HOME</a>
+                        <div class="dropdown-content bg-white">
+                            <a href="#">Home01</a>
+                            <a href="#">Home02</a>
+                        </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link active" href="#">ABOUT</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            dDown
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            HEADERS
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                        <div class="dropdown-content bg-white">
+                            <a href="#">Header Style 1</a>
+                            <a href="#">Header Style 2</a>
+                            <a href="#">Header Style 3</a>
+                            <a href="#">Header Style 4</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" aria-current="page" href="#">BLOG POST</a>
+                        <div class="dropdown-content bg-white">
+                            <a href="#">Blog Grid</a>
+                            <a href="#">Blog Masanary</a>
+                            <a href="#">clasic</a>
+                            <a href="#">Blog Detail</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#">SERVICES</a>
+                        <div class="dropdown-content bg-white">
+                            <a href="#">Full Width</a>
+                            <a href="#">Services 2 col</a>
+                            <a href="#">Services 3 col</a>
+                            <a href="#">Services 4 col</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#">FEATURES</a>
+                        <div class="dropdown-content bg-white">
+                            <a href="#">Short Codes</a>
+                            <a href="#">Feature 2 col</a>
+                            <a href="#">Feature 3 col</a>
+                            <a href="#">Feature 4 col</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#">PAGES</a>
+                        <div class="dropdown-content bg-white">
+                            <a href="#">pages</a>
+                            <a href="#">pages</a>
+                            <a href="#">pages</a>
+                            <a href="#">pages</a>
+                        </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled">Link</a>
+                        <a class="nav-link active" href="#">CONTACT</a>
                     </li>
                 </ul>
-            
-        </div>
+            </div>
         </div>
     </nav>
-
-    <!-- <nav class="bg-white sticky-top">
-        <main class="container">
-            <div class="row w-100 py-4">
-                <div class="col-3">
-                    <img src="images/Trade-X-Logo.png" alt="">
-                </div>
-                <div class="col-9">
-                    <ul class="text-dark d-flex justify-content-between pt-3">
-                        <div class="dropdown">
-                            <button class="dropbtn dropdown-toggle">HOME</button>
-                            <div class="dropdown-content bg-white">
-                                <a href="#">Home01</a>
-                                <a href="#">Home02</a>
-                            </div>
-                        </div>
-                        <li><a href="">ABOUT</a></li>
-                        <div class="dropdown">
-                            <button class="dropbtn dropdown-toggle">HEADERS</button>
-                            <div class="dropdown-content bg-white">
-                                <a href=""></a>
-                                <a href="#">Header Style 1</a>
-                                <a href="#">Header Style 2</a>
-                                <a href="#">Header Style 3</a>
-                                <a href="#">Header Style 4</a>
-                            </div>
-                        </div>
-                        <div class="dropdown">
-                            <button class="dropbtn dropdown-toggle">BLOG POST</button>
-                            <div class="dropdown-content bg-white">
-                                <a href=""></a>
-                                <a href="#">Blog Grid</a>
-                                <a href="#">Blog Masanary</a>
-                                <a href="#">clasic</a>
-                                <a href="#">Blog Detail</a>
-                            </div>
-                        </div>
-                        <div class="dropdown">
-                            <button class="dropbtn dropdown-toggle">SERVICES</button>
-                            <div class="dropdown-content bg-white">
-                                <a href=""></a>
-                                <a href="#">Full Width</a>
-                                <a href="#">Services 2 col</a>
-                                <a href="#">Services 3 col</a>
-                                <a href="#">Services 4 col</a>
-                            </div>
-                        </div>
-                        <div class="dropdown">
-                            <button class="dropbtn dropdown-toggle">FEATURES</button>
-                            <div class="dropdown-content bg-white">
-                                <a href=""></a>
-                                <a href="#">Short Codes</a>
-                                <a href="#">Feature 2 col</a>
-                                <a href="#">Feature 3 col</a>
-                                <a href="#">Feature 4 col</a>
-                            </div>
-                        </div>
-                        <div class="dropdown">
-                            <button class="dropbtn dropdown-toggle">PAGES</button>
-                            <div class="dropdown-content bg-white">
-                                <a href=""></a>
-                                <a href="#">pages</a>
-                                <a href="#">pages</a>
-                                <a href="#">pages</a>
-                                <a href="#">pages</a>
-                            </div>
-                        </div>
-                        <li><a href="">CONTACT</a></li>
-                    </ul>
-                </div>
-            </div>
-        </main>
-    </nav> -->
     <!-- Navbar End -->
 
     <!-- Section1 Slider Start -->
@@ -940,21 +910,23 @@
     <!-- Our Pricing Section End -->
 
 <!-- Subscribe Start -->
-    <section class="mt-5 subscribtion">
-        <main class="row bg-dark text-white p-5">
-            <div class="col-5">
+    <section class="mt-5 subscribtion bg-dark">
+        <div class="container">
+        <main class="row text-white p-5">
+            <div class="col-6">
                 <div class="d-flex p-4">
                     <i class="far fa-envelope pe-3"></i>
                     <h1 class="">Subscribe now for news</h1>
                 </div>
             </div>
-            <form action="" class="col-7">
+            <form action="" class="col-6">
                 <div class="d-flex ps-5 justify-content-between">
                     <input type="text" placeholder="Input Your Email" class="col-6 rounded p-2 align-self-center">
                     <a href="" type="submit" class="btn btn-primary rounded-pill my-4 px-5 py-2"><h5>Subscribe</h5></a>
                 </div>
             </form>
         </main>
+        </div>
     </section>
 <!-- Subscribe End -->
 
@@ -1199,13 +1171,18 @@
             </div>
         </div>
     </div>
-    <main class="bg-primary position-relative">
-        <div class="position-absolute client-watermark"><i class="fas fa-phone-volume text-white"></i></div>
-        <div class="row justify-content-around p-5">
-            <h3 class="col-6 text-white">If You Like This Grate Work ?? For You Site...</h3>
-            <a href="" type="submit" class=" bg-white text-primary rounded-pill col-2 text-center py-1"><h5 class="">Purchase Now</h5></a>
+    <div class="bg-primary">
+        <div class="container">
+            <main class=" position-relative">
+                <div class="position-absolute client-watermark"><i class="fas fa-phone-volume text-white"></i></div>
+                <div class="row justify-content-around p-5">
+                    <h3 class="col-6 text-white">If You Like This Grate Work ?? For You Site...</h3>
+                    <a href="" type="submit" class=" bg-white text-primary rounded-pill col-2 text-center py-1"><h5 class="">Purchase Now</h5></a>
+                </div>
+            </main>
         </div>
-    </main>
+    </div>
+    
 </section>
 <!-- Meet Clients Section Start -->
 
