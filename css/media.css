@@ -68,6 +68,16 @@
         width: max-content;
     }
 
+    .nav-item button{
+        font-size: 100% !important;
+        padding: 0.5rem 2.5rem;
+    }
+
+    /* .pricing-res-btn{
+        padding: 0 !important;
+    } */
+
+
     /* meet clients */
     .client-test img{
         display: none;
@@ -111,6 +121,17 @@
         width: max-content;
     }
 
+    .nav-item button{
+        font-size: 100% !important;
+        padding: 0.5rem 2.5rem;
+    }
+
+    .pricing-res-btn h5{
+        font-size: 100% !important;
+        font-weight: 100;
+    }
+
+
     /* meet clients */
     .client-test img{
         display: none;
@@ -119,6 +140,7 @@
     .tes{
         margin-left: 0 !important;
     }
+
 }
 
 
