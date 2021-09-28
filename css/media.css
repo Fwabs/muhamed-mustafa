@@ -1,3 +1,10 @@
+@media (max-width:1200px){
+    /* our services */
+    .res-services-img{
+        height: 180rem;
+    }
+}
+
 @media (max-width:992px){
     /* Header */
     .res-justify{
@@ -14,6 +21,24 @@
         .res-about-img{
             margin-left: 0%;
     }
+
+    /* our services */
+    .res-services-img{
+        height: 165rem;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    /* meet clients */
+    .client-test img{
+        display: none;
+    }
+
+    .tes{
+        margin-left: 0 !important;
+    }
 }
 
 @media (max-width:768px){
@@ -27,6 +52,29 @@
 
         .res-about-img{
             margin-left: 0%;
+    }
+
+    /* our services */
+    .res-services-img{
+        height: 165rem;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    /* Our Pricing */
+    .w-fit{
+        width: max-content;
+    }
+
+    /* meet clients */
+    .client-test img{
+        display: none;
+    }
+
+    .tes{
+        margin-left: 0 !important;
     }
 }
 
@@ -47,6 +95,29 @@
 
     .res-about-img{
         margin-left: 0%;
+    }
+
+    /* our services */
+    .res-services-img{
+        height: 165rem;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    /* Our Pricing */
+    .w-fit{
+        width: max-content;
+    }
+
+    /* meet clients */
+    .client-test img{
+        display: none;
+    }
+
+    .tes{
+        margin-left: 0 !important;
     }
 }
 
