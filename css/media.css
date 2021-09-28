@@ -1,4 +1,54 @@
 @media (max-width:992px){
-    /*  */
-    
+    /* Header */
+    .res-justify{
+        justify-content: start !important;
+    }
+    /* about us sec */
+    .about-box{
+        z-index: 0;
+        left: 0%;
+        top: 0%;
+        position: inherit;
+    }
+
+        .res-about-img{
+            margin-left: 0%;
+    }
 }
+
+@media (max-width:768px){
+    /* about us sec */
+    .about-box{
+        z-index: 0;
+        left: 0%;
+        top: 0%;
+        position: inherit;
+    }
+
+        .res-about-img{
+            margin-left: 0%;
+    }
+}
+
+
+@media (max-width:576px){
+    /* Header */
+    .res-justify{
+        justify-content: start !important;
+    }
+
+    /* about us sec */
+    .about-box{
+        z-index: 0;
+        left: 0%;
+        top: 0%;
+        position: inherit;
+    }
+
+    .res-about-img{
+        margin-left: 0%;
+    }
+}
+
+
+
