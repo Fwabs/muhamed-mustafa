@@ -627,3 +627,20 @@ footer button{
 .after-foot{
     box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
 }
+
+
+/* ----------------------------------------------------------------------------------- */
+/* Contact Page */
+
+/* Contact upper section */
+.cont-image img{
+    height: 350px;
+}
+
+.cont-ul{
+    position: absolute;
+    bottom: 0;
+    font-size: 120%;
+    font-weight: 450;
+    background-color: rgba(0, 0, 0, 0.404);
+}
