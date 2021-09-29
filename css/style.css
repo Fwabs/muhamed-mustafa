@@ -644,3 +644,32 @@ footer button{
     font-weight: 450;
     background-color: rgba(0, 0, 0, 0.404);
 }
+
+
+/* Contact Form */
+i:hover{
+    background-color: transparent !important;
+}
+
+.formation input, textarea{
+    border: none !important;
+    border-radius: 0 !important;
+    border-bottom: 1px solid black !important;
+    transition: 0.5s;
+}
+
+.formation input:focus, textarea:focus{
+    outline: none !important;
+}
+
+.formation i {
+    left: 2%;
+    top : 25%;
+    color: black;
+}
+
+
+.formation2 i{
+    top: 4%;
+    color: black;
+}
