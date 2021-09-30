@@ -210,24 +210,31 @@
         </main>
 
         <main>
-            <div class="row">
-                <div class="mb-3 col-sm-12 col-lg-4 position-relative formation">
-                    <input type="text" class="form-control px-4" id="exampleFormControlInput1" placeholder="Name">
-                    <i class="far fa-user position-absolute "></i>
+            <form autocomplete="off" id="questForm">
+                <div class="row">
+                    <div class="mb-3 col-sm-12 col-lg-4 position-relative formation">
+                        <input type="text" class="form-control px-4" id="name"  name="name" placeholder="Name">
+                        <i class="far fa-user position-absolute "></i>
+                        <p class="text-danger"></p>
+                    </div>
+                    <div class="mb-3 col-sm-12 col-lg-4 position-relative formation">
+                        <input type="email" class="form-control px-4" id="email"  name="email" placeholder="Email">
+                        <i class="far fa-envelope position-absolute "></i>
+                        <p class="text-danger"></p>
+                    </div>
+                    <div class="mb-3 col-sm-12 col-lg-4 position-relative formation">
+                        <input type="password" class="form-control px-4" id="password" name="password" placeholder="password">
+                        <i class="fas fa-pencil-alt position-absolute "></i>
+                        <p class="text-danger"></p>
+                    </div>
                 </div>
-                <div class="mb-3 col-sm-12 col-lg-4 position-relative formation">
-                    <input type="email" class="form-control px-4" id="exampleFormControlInput2" placeholder="Email">
-                    <i class="far fa-envelope position-absolute "></i>
+                <div class="mb-3 position-relative formation2">
+                    <textarea class="form-control px-4" id="exampleFormControlTextarea1" rows="10" placeholder="Your Message"></textarea>
+                    <i class="fas fa-pencil-alt position-absolute"></i>
                 </div>
-                <div class="mb-3 col-sm-12 col-lg-4 position-relative formation">
-                    <input type="email" class="form-control px-4" id="exampleFormControlInput3" placeholder="Subject">
-                    <i class="fas fa-pencil-alt position-absolute "></i>
-                </div>
-            </div>
-            <div class="mb-3 position-relative formation2">
-                <textarea class="form-control px-4" id="exampleFormControlTextarea1" rows="10" placeholder="Your Message"></textarea>
-                <i class="fas fa-pencil-alt position-absolute"></i>
-            </div>
+                <button class="btn btn-primary rounded-pill my-5 p-2">Send a Message</button>
+            </form>
+            
         </main>
     </section>
     <!-- Get In Touch Section End -->
@@ -256,7 +263,10 @@
                         <h3 class="pb-2 text-white">Posts</h3>
                         <hr class="mb-2 bg-primary w-25">
                         <div class="row justify-content-between align-items-center py-3">
-                            <img src="images/office-1209640_1920-1-360x380.jpg" class="col-3" alt="">
+                            <div class="position-relative col-3 bg-dark footer-img">
+                                <img src="images/office-1209640_1920-1-360x380.jpg" class=" w-100 footer-img" alt="">
+                                <div class="footer-overlay"></div>
+                            </div>
                             <div class="col-7 align-self-center me-auto">
                                 <h6 class=""><a class="text-white">Four ways to cheer and plan your self up on Blue</a></h6>
                                 <div class="row justify-content-between align-items-center text-muted">
@@ -267,7 +277,11 @@
                         </div>
                         <hr class="bg-secondary w-75">
                         <div class="row justify-content-between align-items-center py-3">
-                            <img src="images/office-1209640_1920-1-360x380.jpg" class="col-3" alt="">
+                            <div class="position-relative col-3 bg-dark footer-img">
+                                <img src="images/office-1209640_1920-1-360x380.jpg" class=" w-100 footer-img" alt="">
+                                <div class="footer-overlay"></div>
+                            </div>
+                            
                             <div class="col-7 align-self-center me-auto">
                                 <h6 class=""><a class="text-white">Four ways to cheer and plan your self up on Blue</a></h6>
                                 <div class="row justify-content-between align-items-center text-muted">
@@ -369,5 +383,6 @@
     })
         </script> -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
 </body>
 </html>

@@ -629,6 +629,20 @@ footer button{
 }
 
 
+.footer-img:hover .footer-overlay{
+    opacity: 1;
+}
+
+.footer-overlay{
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 79%;
+    background-color: rgba(0, 0, 0, 0.411);
+    opacity: 0;
+}
+
+
 /* ----------------------------------------------------------------------------------- */
 /* Contact Page */
 
@@ -660,11 +674,13 @@ i:hover{
 
 .formation input:focus, textarea:focus{
     outline: none !important;
+    box-shadow: none !important;
+    border-color: rgb(12, 101, 237) !important;
 }
 
 .formation i {
     left: 2%;
-    top : 25%;
+    top : 21%;
     color: black;
 }
 
