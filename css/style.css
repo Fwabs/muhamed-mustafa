@@ -86,7 +86,7 @@ nav a{
 }
 
 .dropdown {
-    position: relative;
+    /* position: relative; */
 }
 
 .dropdown-content {
@@ -114,10 +114,9 @@ nav a{
 .dropdown-content a:hover {
     color: rgb(12, 101, 237);
     transition: 0.2s;
-
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover +.dropdown-content {
     opacity: 1;
     transition: 0.5s;
     left: -10%;
